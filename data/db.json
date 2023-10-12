@@ -17,49 +17,6 @@
       "journalist": "Nome do jornalista",
       "newsDate": "01/01/2023",
       "time": "00:00"
-    },
-    {
-      "id": 3,
-      "img": "Imagem",
-      "title": "Título da notícia",
-      "text": "Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet",
-      "journalist": "Nome do jornalista",
-      "newsDate": "01/01/2023",
-      "time": "00:00"
-    },
-    {
-      "id": 4,
-      "img": "Imagem",
-      "title": "Título da notícia",
-      "text": "Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet",
-      "journalist": "Nome do jornalista",
-      "newsDate": "01/01/2023",
-      "time": "00:00"
-    },
-    {
-      "id": 5,
-      "img": "Imagem",
-      "title": "Título da notícia",
-      "text": "Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet",
-      "journalist": "Nome do jornalista",
-      "newsDate": "01/01/2023",
-      "time": "00:00"
-    },
-    {
-      "title": "titulo",
-      "text": "texto",
-      "journalist": "tayane",
-      "newsData": "02012001",
-      "time": "18:50",
-      "id": 6
-    },
-    {
-      "title": "Noticia teste",
-      "text": "Texto da noticia teste",
-      "journalist": "Tayane Cristina",
-      "newsData": "02/01/2001",
-      "time": "15:35",
-      "id": 7
     }
   ]
 }

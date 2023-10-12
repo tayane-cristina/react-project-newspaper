@@ -1,4 +1,4 @@
-import { useState, useEffect} from 'react'
+import { useState} from 'react'
 import './App.css';
 import { useFetch } from './hooks/useFetch';
 
@@ -7,17 +7,14 @@ function App() {
 const url = "http://localhost:3000/news" 
 
 //CUSTOM HOOKS PARA RESGATAR OS DADOS:
-const { data: items, httpConfig } = useFetch(url);
+const { data: items, httpConfig, loading, error } = useFetch(url);
 
 //STATES
-const [news, setNews] = useState([]);
-
-
-const [title, setTitle] = useState("")
-const [text, setText] = useState("")
-const [journalist, setJournalist] = useState("")
-const [time, setTime] = useState("")
-const [newsData, setNewsData] = useState("")
+const [title, setTitle] = useState("");
+const [text, setText] = useState("");
+const [journalist, setJournalist] = useState("");
+const [time, setTime] = useState("");
+const [newsData, setNewsData] = useState("");
 
 //LIMPANDO OS INPUTS:
 const clean = () => {
@@ -41,32 +38,32 @@ e.preventDefault()
     time,
   };
 
-  const res = await fetch(url , {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(news)
+  httpConfig(news, "POST")
 
-  })
-
-  const addNews = await res.json()
-
-  setNews((previousNews) => [...previousNews, addNews])
   clean()
 
-}
+};
+
+//DELETANDO DADOS:
+const handleRemove = (id) => {
+  httpConfig(id, "DELETE")
+};
 
   return (
     <div className="App">
-      <ul>
+      {loading && <h2>Carregando dados...</h2>}
+      {error && <p>{error}</p>}
+      {!loading && (
+        <ul>
         {items && items.map((notice) => <li key={notice.id}>
           <h1>{notice.title}</h1>
           <p>{notice.text}</p>
           <span>{notice.journalist}</span>
+          <button onClick={() => handleRemove(notice.id)}>Excluir</button>
         </li> )}
       </ul>
-
+      )}
+    
       <form onSubmit={addNewsData}>
 
         <label>Título:
@@ -118,7 +115,9 @@ e.preventDefault()
           >
           </input>
         </label>
-        <button type='submit'>Enviar Notícia</button>
+        {loading && <button type='submit' disabled value="Aguarde">Enviar Notícia</button>};
+        {!loading &&  <button type='submit'>Enviar Notícia</button>}
+       
 
       </form>
       
