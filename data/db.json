@@ -17,6 +17,30 @@
       "journalist": "Nome do jornalista",
       "newsDate": "01/01/2023",
       "time": "00:00"
+    },
+    {
+      "title": "Testando uma Notícia ",
+      "text": "Notícia de teste",
+      "journalist": "Tayane Cristina ",
+      "newsData": "10/02/2001",
+      "time": "15:30",
+      "id": 3
+    },
+    {
+      "title": "Testando uma Notícia ",
+      "text": "Notícia de teste",
+      "journalist": "Tayane Cristina ",
+      "newsData": "10/02/2001",
+      "time": "15:30",
+      "id": 4
+    },
+    {
+      "title": "Testando uma Notícia ",
+      "text": "Notícia de teste",
+      "journalist": "Tayane Cristina ",
+      "newsData": "10/02/2001",
+      "time": "15:30",
+      "id": 5
     }
   ]
 }

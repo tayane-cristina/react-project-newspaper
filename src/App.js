@@ -1,6 +1,10 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { useState} from 'react'
 import './App.css';
 import { useFetch } from './hooks/useFetch';
+import Home from './pages/Home';
+import RegisterNews from './pages/RegisterNews';
+import Navbar from './components/Navbar';
 
 function App() {
   
@@ -51,75 +55,36 @@ const handleRemove = (id) => {
 
   return (
     <div className="App">
-      {loading && <h2>Carregando dados...</h2>}
-      {error && <p>{error}</p>}
-      {!loading && (
-        <ul>
-        {items && items.map((notice) => <li key={notice.id}>
-          <h1>{notice.title}</h1>
-          <p>{notice.text}</p>
-          <span>{notice.journalist}</span>
-          <button onClick={() => handleRemove(notice.id)}>Excluir</button>
-        </li> )}
-      </ul>
-      )}
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home 
+          handleRemove={handleRemove} 
+          items={items} 
+          loading={loading}
+          error={error}
+          />}
+          >
+          </Route>
+          <Route path='/registernews' element={<RegisterNews 
+          addNewsData={addNewsData} 
+          title={title}
+          setTitle={setTitle} 
+          text={text} 
+          setText={setText} 
+          journalist={journalist}
+          setJournalist={setJournalist} 
+          newsData={newsData} 
+          setNewsData={setNewsData} 
+          time={time} 
+          setTime={setTime} 
+          loading={loading}/>}
+          >
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      
     
-      <form onSubmit={addNewsData}>
-
-        <label>Título:
-          <input 
-          type="title"
-          value={title}
-          name="title"
-          onChange={(e) => setTitle(e.target.value)} 
-          >
-          </input>
-        </label>
-
-        <label>Texto:
-          <input 
-          type="text"
-          value={text}
-          name="text"
-          onChange={(e) => setText(e.target.value)} 
-          >
-          </input>
-        </label>
-
-        <label>Autor:
-          <input 
-          type="text"
-          name="journalist"
-          value={journalist}
-          onChange={(e) => setJournalist(e.target.value)} 
-          >
-          </input>
-        </label>
-
-        <label>Data:
-          <input 
-          type="text"
-          name="newsData"
-          value={newsData}
-          onChange={(e) => setNewsData(e.target.value)} 
-          >
-          </input>
-        </label>
-
-        <label>Hora:
-          <input 
-          type="text"
-          name='time'
-          value={time}
-          onChange={(e) => setTime(e.target.value)} 
-          >
-          </input>
-        </label>
-        {loading && <button type='submit' disabled value="Aguarde">Enviar Notícia</button>};
-        {!loading &&  <button type='submit'>Enviar Notícia</button>}
-       
-
-      </form>
       
     </div>
   );

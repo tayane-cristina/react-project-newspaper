@@ -1,0 +1,13 @@
+nav {
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    width: 50%;
+}
