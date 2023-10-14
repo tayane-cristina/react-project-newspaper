@@ -1,0 +1,28 @@
+.li-home {
+    list-style: none;
+    background-color: rgb(213, 149, 229);
+    height: 22vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    border: 3px solid black;
+
+}
+
+.li-home button{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    align-self: last baseline;
+    margin: 10px;
+
+}
+
+.ul-home {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}

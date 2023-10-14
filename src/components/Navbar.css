@@ -5,9 +5,10 @@ nav {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    text-transform: uppercase;
 }
 
-h1 {
-    font-size: 40px;
+.h1-navbar {
+    font-size: 60px;
     width: 50%;
 }

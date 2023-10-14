@@ -1,15 +1,6 @@
 {
   "news": [
     {
-      "id": 1,
-      "img": "Imagem",
-      "title": "Título da notícia",
-      "text": "Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet",
-      "journalist": "Nome do jornalista",
-      "newsDate": "01/01/2023",
-      "time": "00:00"
-    },
-    {
       "id": 2,
       "img": "Imagem",
       "title": "Título da notícia",
