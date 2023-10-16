@@ -1,6 +1,7 @@
-import { HiSearch } from "react-icons/hi";
 import './Navbar.css'
 import { Link } from 'react-router-dom';
+import Box from '@mui/material/Box';
+import Input from '@mui/material/Input';
 
 const Navbar = () => {
     return (
@@ -10,8 +11,17 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
                 <Link to="/registernews">Registrar Noticia</Link>
                 <div className="navbar-div-search">
-                    <input type="text" placeholder='Buscar'className='navbar-input-search'></input>
-                    <button className='navbar-button-search' type='button'><HiSearch /></button>
+                    <Box
+                        sx={{
+                            py: 2,
+                            display: 'grid',
+                            gap: 2,
+                            alignItems: 'center',
+                            flexWrap: 'wrap',
+                        }}
+                        >
+                        <Input placeholder="Buscar"  variant="solid" className='navbar-input-search' />
+                    </Box>
                 </div>
                 
             </nav>

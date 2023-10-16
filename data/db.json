@@ -1,37 +1,20 @@
 {
   "news": [
     {
-      "id": 2,
-      "img": "Imagem",
-      "title": "Título da notícia",
-      "text": "Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet Lorem ipsum set amet",
-      "journalist": "Nome do jornalista",
-      "newsDate": "01/01/2023",
-      "time": "00:00"
+      "title": "Por que eu (estupidamente (?)) concordei com um pedido de entrevista do Sunday Times",
+      "text": "Recentemente fui tema de uma reportagem de capa do Sunday Times escrita por Decca Aitkenson. Os não assinantes que desejam lê-lo podem se inscrever para receber dois artigos gratuitos por semana aqui . Divulguei o áudio completo da entrevista no YouTube aqui para que os interessados ​​pudessem descobrir por si mesmos o que de fato foi dito.\n\nDado o teor da peça (muito crítico em relação a mim e ainda mais à minha filha Mikhaila) e ao facto de ter sido sujeito a coberturas muito pouco lisonjeiras semelhantes muitas vezes no passado, parece razoável que mesmo aqueles que estão inclinados a defender-me perguntem: como eu poderia ter sido estúpido o suficiente para concordar com a entrevista e a história?",
+      "journalist": "Jordan Peterson ",
+      "newsData": "2023-05-20",
+      "time": "",
+      "id": 7
     },
     {
-      "title": "Testando uma Notícia ",
-      "text": "Notícia de teste",
-      "journalist": "Tayane Cristina ",
-      "newsData": "10/02/2001",
-      "time": "15:30",
-      "id": 3
-    },
-    {
-      "title": "Testando uma Notícia ",
-      "text": "Notícia de teste",
-      "journalist": "Tayane Cristina ",
-      "newsData": "10/02/2001",
-      "time": "15:30",
-      "id": 4
-    },
-    {
-      "title": "Testando uma Notícia ",
-      "text": "Notícia de teste",
-      "journalist": "Tayane Cristina ",
-      "newsData": "10/02/2001",
-      "time": "15:30",
-      "id": 5
+      "title": "Jogos de video game e como eles afetam o imaginário dos nossos jovens",
+      "text": "     Atualmente saiu um estudo da universidade de havarde que indicou uma baixa significativa na taxa de senso criativo e imaginativo em crianças de 5 a 12 anos de idade.\n\n     De acordo com o estudo, a principal causa dessa queda e devida a grande quantidade de aparelho eletrônicos autamente estimulantes que estamos permitindo que faça para da rotina cotidiana de nossos jovens.\n\n     No Brasil mais de 70% da população se considera incapaz de passar 24 horas longe de seus smartphones e computadores, esses são os dados sobre pessoas adultas ",
+      "journalist": "Tayane Cristiana",
+      "newsData": "2023-05-14",
+      "time": "",
+      "id": 8
     }
   ]
 }
