@@ -1,28 +1,57 @@
-.li-home {
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.div-home{
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;;
+}
+
+.ul-home{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
-    background-color: rgb(213, 149, 229);
-    height: 22vh;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-    flex-wrap: wrap;
-    border: 3px solid black;
-
+    justify-content: space-around;
+    align-items: center;
 }
 
-.li-home button{
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    align-self: last baseline;
+.li-home{
+    background-color: rgba(128, 128, 128, 0.178);
+    width: 35vw;
+    height: 20vh;
     margin: 10px;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    
 }
 
-.ul-home {
-    height: auto;
+.img-news-home img{
+   height: 100%;
+   width: 200px;
+}
+.body-news-home{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-around;
+}
+
+.button-remove-news-home{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border: 3px solid rgb(189, 16, 16);
+    color: white;
+    margin: 5px;
+    background-color: rgb(189, 16, 16);
+}
+
+.button-remove-news-home:hover {
+    background-color: rgb(191, 195, 199);
+    background-color: rgb(150, 17, 17);
+    border: 3px solid rgb(150, 17, 17);
 }

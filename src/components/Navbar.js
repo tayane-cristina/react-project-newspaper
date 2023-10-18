@@ -1,27 +1,18 @@
 import './Navbar.css'
 import { Link } from 'react-router-dom';
-import Box from '@mui/material/Box';
-import Input from '@mui/material/Input';
+import React from 'react';
+
 
 const Navbar = () => {
+
     return (
         <div>
             <nav>
                 <h1 className="h1-navbar">Newspaper</h1>
-                <Link to="/">Home</Link>
-                <Link to="/registernews">Registrar Noticia</Link>
-                <div className="navbar-div-search">
-                    <Box
-                        sx={{
-                            py: 2,
-                            display: 'grid',
-                            gap: 2,
-                            alignItems: 'center',
-                            flexWrap: 'wrap',
-                        }}
-                        >
-                        <Input placeholder="Buscar"  variant="solid" className='navbar-input-search' />
-                    </Box>
+                <Link className='navbar-link' to="/">Home</Link>
+                <Link className='navbar-link' to="/registernews">Registrar Noticia</Link>
+                <div className="div-search-navbar">
+                    <input type="text" className="input-search-navbar" placeholder="Search"/>
                 </div>
                 
             </nav>

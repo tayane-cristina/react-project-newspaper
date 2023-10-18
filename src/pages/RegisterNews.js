@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-const RegisterNews = ({addNewsData, title, setTitle, text, setText, journalist, setJournalist, newsData, setNewsData, time, setTime, loading}) => {
+const RegisterNews = ({addNewsData, title, setTitle, text, setText, journalist, setJournalist, newsData, setNewsData, time, setTime, loading, img, setImg}) => {
     return (
         <div className='div-registerNews'>
           <Box
@@ -20,7 +20,6 @@ const RegisterNews = ({addNewsData, title, setTitle, text, setText, journalist, 
                   required
                   id="outlined-required"
                   label="Autor"
-                  defaultValue="Hello World"
                   className='form-author'
                   name="journalist"
                             value={journalist}
@@ -29,7 +28,6 @@ const RegisterNews = ({addNewsData, title, setTitle, text, setText, journalist, 
                 <TextField
                   required
                   id="outlined-required"
-                  defaultValue="Data"
                   type="date"
                   name="newsData"
                   value={newsData}
@@ -51,6 +49,21 @@ const RegisterNews = ({addNewsData, title, setTitle, text, setText, journalist, 
                 value={title}
                 name="title"
                 onChange={(e) => setTitle(e.target.value)}  />
+            </Box>
+            <Box
+            sx={{
+              width: 100,
+              maxWidth: '100%',
+            }}
+            >
+            <TextField 
+                fullWidth label="Imagem"
+                required 
+                id="fullWidth" 
+                className='form-img' 
+                value={img}
+                name="img"
+                onChange={(e) => setImg(e.target.value)}  />
             </Box>
             <label>
               <textarea

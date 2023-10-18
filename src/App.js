@@ -5,6 +5,7 @@ import { useFetch } from './hooks/useFetch';
 import Home from './pages/Home';
 import RegisterNews from './pages/RegisterNews';
 import Navbar from './components/Navbar';
+import SeeMore from './pages/SeeMore';
 
 function App() {
   
@@ -19,6 +20,7 @@ const [text, setText] = useState("");
 const [journalist, setJournalist] = useState("");
 const [time, setTime] = useState("");
 const [newsData, setNewsData] = useState("");
+const [img, setImg] = useState("")
 
 //LIMPANDO OS INPUTS:
 const clean = () => {
@@ -27,6 +29,7 @@ const clean = () => {
   setJournalist('')
   setNewsData('')
   setTime('')
+  setImg('')
 };
 
 //ADICIONANDO DADOS:
@@ -34,7 +37,7 @@ const addNewsData = async (e) => {
 e.preventDefault()
 
   const news = {
-
+    img,
     title,
     text,
     journalist,
@@ -63,6 +66,7 @@ const handleRemove = (id) => {
           items={items} 
           loading={loading}
           error={error}
+          img={img}
           />}
           >
           </Route>
@@ -78,9 +82,12 @@ const handleRemove = (id) => {
           setNewsData={setNewsData} 
           time={time} 
           setTime={setTime} 
-          loading={loading}/>}
+          loading={loading}
+          img={img}
+          setImg={setImg}/>}
           >
           </Route>
+        <Route path='/seemore/:id' element={<SeeMore />}></Route>
         </Routes>
       </BrowserRouter>
       
