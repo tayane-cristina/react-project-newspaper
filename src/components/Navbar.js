@@ -14,7 +14,6 @@ const Navbar = () => {
                 <div className="div-search-navbar">
                     <input type="text" className="input-search-navbar" placeholder="Search"/>
                 </div>
-                
             </nav>
         </div>
     )

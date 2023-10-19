@@ -1,9 +1,11 @@
+import './SeeMore.css'
+
 import { useParams } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
 
 const SeeMore = () => {
 
-    const { id, text } = useParams()
+    const { id } = useParams()
 
     const url = "http://localhost:3000/news/" + id 
 
@@ -11,10 +13,20 @@ const SeeMore = () => {
     console.log(news)
 
     return (
-        <div>
-            <h1>See More</h1>
-            <p>Está página tem detalhes sobre a notícia número {id}</p>
-            <p>{text}</p>
+        <div className="div-seemore-news">
+            {error && <p>Falha ao carregar os dados...</p>}
+            {loading && <p>Carregando os dados...</p>}
+            {news && (
+                <div className='div-seemore-text-infor'>
+                    <img src={news.img} alt="Descrição de imagem"></img>
+                    <h2>{news.title}</h2>
+                    <div className="infor-about-infor">
+                        <span><strong>{news.journalist}</strong></span>
+                        <span>{news.newsData}</span>
+                    </div>
+                    <p>{news.text}</p>
+                </div>
+            ) } 
         </div>
     )
 

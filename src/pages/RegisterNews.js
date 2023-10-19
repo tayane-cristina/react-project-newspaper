@@ -22,8 +22,8 @@ const RegisterNews = ({addNewsData, title, setTitle, text, setText, journalist, 
                   label="Autor"
                   className='form-author'
                   name="journalist"
-                            value={journalist}
-                            onChange={(e) => setJournalist(e.target.value)} 
+                  value={journalist}
+                  onChange={(e) => setJournalist(e.target.value)} 
                 />
                 <TextField
                   required

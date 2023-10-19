@@ -2,7 +2,8 @@
 
 .div-home{
     min-height: 100vh;
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 5rem;
 }
 
 .ul-home{

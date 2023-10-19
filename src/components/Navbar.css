@@ -8,6 +8,9 @@ nav {
     align-items: center;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
+    bottom: auto;
+    position: relative;
+    width: 100%;
 }
 
 
