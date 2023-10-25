@@ -18,22 +18,24 @@ nav {
 .h1-navbar {
     font-size: 50px;
     width: 40%;
+    text-decoration: none;
+    color: rgba(248, 248, 248, 0.822);
 }
 
 .navbar-link {
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 15px;
+    padding: 8px;
     transition: 0.3s;
     border-radius: 5px;
 }
 
-.navbar-link:hover {
-    background-color: rgba(163, 157, 157, 0.89);
-    
-    
+.navbar-link:active {
+    text-decoration: underline;
 }
+
+
 
 .div-search-navbar{
     width: 20%;
@@ -46,4 +48,6 @@ nav {
     font-size: 16px;
     
 }
+
+
 

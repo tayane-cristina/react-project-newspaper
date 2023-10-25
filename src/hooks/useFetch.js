@@ -50,9 +50,6 @@ export const useFetch = (url) => {
                 console.log(error.message)
                 setError("Erro ao carregar os dados")
             }
-
-            
-
             setLoading(false)
         }
         fetchData()

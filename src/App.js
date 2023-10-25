@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import RegisterNews from './pages/RegisterNews';
 import Navbar from './components/Navbar';
 import SeeMore from './pages/SeeMore';
+import Search from './pages/Search';
+import SearchForm from './components/SearchForm';
 
 function App() {
   
@@ -60,6 +62,7 @@ const handleRemove = (id) => {
     <div className="App">
       <BrowserRouter>
         <Navbar />
+        <SearchForm />
         <Routes>
           <Route path='/' element={<Home 
           handleRemove={handleRemove} 
@@ -88,6 +91,7 @@ const handleRemove = (id) => {
           >
           </Route>
         <Route path='/seemore/:id' element={<SeeMore />}></Route>
+        <Route path='/search' element={<Search />}></Route>
         </Routes>
       </BrowserRouter>
       
