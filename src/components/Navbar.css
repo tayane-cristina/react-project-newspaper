@@ -4,7 +4,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
@@ -13,11 +13,9 @@ nav {
     width: 100%;
 }
 
-
-
 .h1-navbar {
-    font-size: 50px;
-    width: 40%;
+    font-size: 70px;
+    width: 20%;
     text-decoration: none;
     color: rgba(248, 248, 248, 0.822);
 }
@@ -31,23 +29,17 @@ nav {
     border-radius: 5px;
 }
 
+.navbar-link:hover{
+    color: grey;
+}
+
+.links {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .navbar-link:active {
     text-decoration: underline;
 }
-
-
-
-.div-search-navbar{
-    width: 20%;
-}
-
-.div-search-navbar input{
-    width: 80%;
-    height: 40px;
-    border-radius: 5px;
-    font-size: 16px;
-    
-}
-
-
-

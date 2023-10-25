@@ -2,7 +2,7 @@ import './SeeMore.css'
 
 import { useParams } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
-
+import SocialMedia from '../hooks/SocialMedia'
 const SeeMore = () => {
 
     const { id } = useParams()
@@ -24,9 +24,10 @@ const SeeMore = () => {
                         <span><strong>{news.journalist}</strong></span>
                         <span>{news.newsData}</span>
                     </div>
-                    <p>{news.text}</p>
+                    <p className='text-news'>{news.text}</p>
                 </div>
             ) } 
+            <SocialMedia />
         </div>
     )
 

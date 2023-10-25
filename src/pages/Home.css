@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .div-home{
-    min-height: 100vh;
+    height: auto;
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 5rem;
 }
 
 .ul-home{
@@ -16,6 +15,7 @@
     list-style: none;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Raleway';
 }
 
 .li-home{

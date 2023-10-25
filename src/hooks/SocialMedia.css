@@ -1,8 +1,8 @@
 .div-social-media{
     background-color: rgba(19, 18, 18, 0.973);
     bottom: 0;
-    position: fixed;
-    height: 18vh;
+    position: relative;
+    left: 0;
     width: 100%;
     text-align: center;
     display: flex;

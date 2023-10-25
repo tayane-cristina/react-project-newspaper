@@ -2,8 +2,10 @@ import './RegisterNews.css';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import SocialMedia from '../hooks/SocialMedia';
 
 const RegisterNews = ({addNewsData, title, setTitle, text, setText, journalist, setJournalist, newsData, setNewsData, time, setTime, loading, img, setImg}) => {
+  
     return (
         <div className='div-registerNews'>
           <Box
@@ -68,7 +70,7 @@ const RegisterNews = ({addNewsData, title, setTitle, text, setText, journalist, 
             <label>
               <textarea
                 className='form-text' 
-                rows="30" 
+                rows="10" 
                 cols="120"
                 placeholder="Digite seu texto aqui..."
                 type="text"
@@ -78,9 +80,9 @@ const RegisterNews = ({addNewsData, title, setTitle, text, setText, journalist, 
                 >
               </textarea>
             </label>
-            {loading && <button className="form-button" type='submit' disabled value="Aguarde">Enviar Notícia</button>}
             {!loading &&  <Button variant="contained" className="form-button" type='submit'>Enviar</Button>}
           </Box>
+          <SocialMedia />
         </div>
     )
 };

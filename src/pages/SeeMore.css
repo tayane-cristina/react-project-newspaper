@@ -8,10 +8,14 @@
     height: auto;
 }
 
+.text-news{
+    font-family: "Raleway";
+}
+
 .div-seemore-news img{
     margin-top: 3rem;
     width: 70vw;
-    height: 50vh;
+    height: 70vh;
     align-items: center;
     display: flex;
     flex-direction: column;

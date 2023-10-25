@@ -1,6 +1,6 @@
 .div-registerNews{
-    min-height: 70vh;
-    width: 80%;
+    height: 70vh;
+    width: 100%;
     margin: auto;
     margin-top: 25px;
 }
@@ -38,12 +38,5 @@ form input{
 }
 
 .form-button{
-    
-    width: 10rem;
-    
+    width: 10rem; 
 }
-
-
-
-
-
